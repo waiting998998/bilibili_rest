@@ -1,0 +1,72 @@
+// font----------------------------------
+$fs-sm: 1.2rem
+$fs-nm: 1.4rem
+$fs-lg: 1.6rem
+
+$fw-sm: 200
+$fw-nm: 400
+$fw-lg: 500
+
+// color----------------------------------
+// $main-color: #00a1d6
+// $main-color: #93856B
+$main-color: #0B6E48
+$ob-color: #E08031
+
+$f-color: #3d464d
+// $a-color: #258CF7
+// $a-color: #126db3
+$a-color: #007fff
+$bg-color: #f1f1f1
+$gray: #666
+$gray-sub: #767676
+$gray-sub-sub: #909090
+
+
+$w: 196px
+$h: 110px
+$lih: 170px
+// box-shadow
+// $box-shadow: 0 2px 5px 0 rgba(0,0,0,0.26)
+// $box-shadow-light: 0 1px 2px rgba(0,0,0,.1)
+$box-shadow-juejin: 0 1px 2px 0 rgba(0,0,0,.05)
+$box-shadow-light: 0 0px 1px rgba(43,59,93,.29)
+$box-shadow-form: 0 0 8px 0 rgba(232,237,250,.6), 0 2px 4px 0 rgba(232,237,250,.5)
+$box-shadow: 0 1px 2px rgba(43,59,93,.29)
+$transition: all .1s ease
+// border
+$border: 1px solid #f1f1f1
+$border-youtube: 1px solid #e8e8e8
+$border-input: 1px solid #D8D8D8
+
+// background
+@mixin bg($size: cover)
+  background-size: $size
+  background-position: center
+  background-repeat: no-repeat
+
+// radius
+@mixin radius-sm
+  border-radius: 2px
+@mixin radius-lg
+  border-radius: 6px
+// @inlcude radius-sm
+
+// media
+@mixin small-screen
+  @media only screen and (max-width: 769px)
+    @content
+@mixin middle-screen
+  @media only screen and (min-width: 768px) and (max-width: 1200px)
+    @content
+@mixin large-screen
+  @media only screen and (min-width: 1200px)
+    @content
+// @include small-screen
+// @include middle-screen
+// @include large-screen
+
+// distance
+$px50: 50px
+$px30: 30px
+$px15: 15px

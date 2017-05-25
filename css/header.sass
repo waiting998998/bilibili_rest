@@ -1,0 +1,115 @@
+@import "./_mixin.sass"
+
+body
+  .z_top.b-header-blur
+    .b-header-mask-wrp
+      background: transparent
+  .z_top
+    position: fixed
+    left: 0
+    top: 0
+    z-index: 300
+    width: 100%
+    background: $main-color !important
+    .b-header-mask-bg
+      display: none
+    .b-header-mask
+      display: none
+    .z_top_nav
+      ul
+        li.home
+          background-position: -836px -74px !important
+        li
+          a.i-link
+            min-width: 63px
+            color: white !important
+            font-size: $fs-sm !important
+    .uns_box
+      li.u-i
+        a.i-link
+          color: white !important
+          font-size: $fs-sm !important
+      li.u-i.b-post
+        a.i-link
+          background-image: none
+        .s-menu
+          border-radius: 0
+          li
+            a
+
+  .header
+    background: none !important
+    margin: 0
+    .header-layer, .header-link, .h-center
+      display: none
+    .num
+      position: fixed
+      top: 0
+      left: 0
+      padding-top: 50px
+      z-index: 200
+      width: 100px
+      height: 100vh
+      background-color: white
+      border-right: $border
+      .menu-r
+        display: none
+      .menu-wrapper
+        width: 100% !important
+        height: 100% !important
+        .nav-menu
+          display: block
+          width: 100%
+          height: 100% !important
+      li.m-i, .home, li.m-i.m-i-square, li.m-i.m-i-live, li.m-i.m-i-blackroom
+        margin: 0 !important
+        margin-bottom: 1px
+        padding-right: 0 !important
+        display: block
+        width: 100% !important
+        height: 30px
+        line-height: 30px
+        a.i-link
+          padding-left: 40px !important
+          font-size: $fs-sm
+          height: 100%
+          line-height: 30px
+          cursor: pointer
+          background-image: none !important
+          &:hover
+            background: $main-color
+            color: white
+          em
+            margin: 0
+            padding: 0
+            display: block
+            width: 100%
+            height: 30px
+            line-height: 30px
+            background-image: none !important
+            font-size: 1.2rem !important
+            &::before
+              display: none
+        .v-num
+          display: none
+          span
+            margin-left: 10px
+            background: transparent
+            color: lighten($gray-sub, 30%)
+        .i_num
+          left: 95px !important
+          top: 0
+          border-radius: 0
+      li.m-i.m-i-square, li.m-i.m-i-live, li.m-i.m-i-blackroom
+        .i_num
+          bottom: 0
+          top: initial
+      // li.m-i.m-i-square.m-i-ex
+      //   .i_num
+      //     height: 230px
+      //     .square-pmt-field
+      //       width: 280px
+      li.m-i.on a.i-link
+        background: $main-color
+        color: white
+        border-bottom: none

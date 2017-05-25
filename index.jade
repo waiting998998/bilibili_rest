@@ -1,0 +1,52 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    title Document
+    link(rel="stylesheet", href="./css/setting.css")
+  body
+    p.chrome-title 同志亦凡人(Bilibili only)
+    form#form-signin.control.hide
+      .input-group
+        label(for="email") 邮箱：
+        input(type="email", name="email", value="")
+      .input-group
+        label(for="password") 密码：
+        input(type="password", name="password", value="")
+      button#submit-btn(type="button") 登录
+    form#form-post.control.hide
+      .wrapper
+        .input-group
+          label(for="email") 名称：
+          input#name(type="text", name="name", value="")
+        .input-group
+          label(for="description") 描述：
+          input#description(type="text", name="description", value="")
+        .input-group
+          label(for="sourceUrl") 原地址：
+          input#sourceUrl(type="text", name="sourceUrl", value="")
+        .input-group
+          label(for="videoUrl") 播放地址：
+          input#videoUrl(type="text", name="videoUrl", value="")
+        .input-group
+          label(for="imgUrl") 缩略图：
+          input#imgUrl(type="text", name="imgUrl", value="")
+        .input-group
+          label(for="duration") 时间：
+          input#duration(type="text", name="duration", value="")
+        .input-group
+          label(for="tags") 标签：
+          input#tags(type="text", name="tags", value="")
+        .input-group
+          label(for="categoryId") 分类选择：
+          select#categoryId(name="categoryId")
+            option(disabled value="") 请选择频道
+        .input-group
+          button#creat-post-btn(type='button') 保存
+    //- #wrong.control.hide 当前仅支持哔哩哔哩视频详情页
+    div.anotation
+      span.title 提示：
+      #ip_div
+    script(src="./js/jquery.min.js")
+    script(src="./js/lodash.min.js")
+    script(src="./js/sign.js")

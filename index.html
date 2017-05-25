@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/setting.css">
+  </head>
+  <body>
+    <p class="chrome-title">同志亦凡人(Bilibili only)</p>
+    <form id="form-signin" class="control hide">
+      <div class="input-group">
+        <label for="email">邮箱：</label>
+        <input type="email" name="email" value="">
+      </div>
+      <div class="input-group">
+        <label for="password">密码：</label>
+        <input type="password" name="password" value="">
+      </div>
+      <button id="submit-btn" type="button">登录</button>
+    </form>
+    <form id="form-post" class="control hide">
+      <div class="wrapper">
+        <div class="input-group">
+          <label for="email">名称：</label>
+          <input id="name" type="text" name="name" value="">
+        </div>
+        <div class="input-group">
+          <label for="description">描述：</label>
+          <input id="description" type="text" name="description" value="">
+        </div>
+        <div class="input-group">
+          <label for="sourceUrl">原地址：</label>
+          <input id="sourceUrl" type="text" name="sourceUrl" value="">
+        </div>
+        <div class="input-group">
+          <label for="videoUrl">播放地址：</label>
+          <input id="videoUrl" type="text" name="videoUrl" value="">
+        </div>
+        <div class="input-group">
+          <label for="imgUrl">缩略图：</label>
+          <input id="imgUrl" type="text" name="imgUrl" value="">
+        </div>
+        <div class="input-group">
+          <label for="duration">时间：</label>
+          <input id="duration" type="text" name="duration" value="">
+        </div>
+        <div class="input-group">
+          <label for="tags">标签：</label>
+          <input id="tags" type="text" name="tags" value="">
+        </div>
+        <div class="input-group">
+          <label for="categoryId">分类选择：</label>
+          <select id="categoryId" name="categoryId">
+            <option disabled value="">请选择频道</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <button id="creat-post-btn" type="button">保存</button>
+        </div>
+      </div>
+    </form>
+    <div class="anotation"><span class="title">提示：</span>
+      <div id="ip_div"></div>
+    </div>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/lodash.min.js"></script>
+    <script src="./js/sign.js"></script>
+  </body>
+</html>

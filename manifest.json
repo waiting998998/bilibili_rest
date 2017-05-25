@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+
+  "name": "qaf",
+  "description": "This extension shows a Google Image search result for the current page",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "images/icon.png",
+    "default_popup": "index.html"
+  },
+  "permissions": [
+    "activeTab",
+    "https://ajax.googleapis.com/"
+  ],
+  "content_scripts": [
+    {
+      "js": ["js/jquery.min.js", "js/inject.js" ],
+      "css": ["css/rest.css"],
+      "matches": [ "*://www.bilibili.com/", "*://www.bilibili.com/index.html", "*://www.bilibili.com/video/*" ],
+      "run_at": "document_idle"
+    }
+  ],
+  "permissions": [ "cookies", "notifications", "https://jsonplaceholder.typicode.com/todos", "*://www.bilibili.com/*", "*://api.qaf.io/", "*://api-t.qaf.io/", "tabs", "activeTab", "contextMenus", "storage" ]
+}
